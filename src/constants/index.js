@@ -28,6 +28,8 @@ export const PROJECTS = [
   {
     title: "Cryptocurrency Price Tracking App", 
     image: project1,
+    github: "https://github.com/Hafijur0211/Cryptoplace",
+    live: "https://cryptoplace-delta.vercel.app/",
     description:
       "A cryptocurrency price tracking app built using ReactJS and the CoinGecko API. The app provides real-time data on cryptocurrency prices, market cap, and historical price charts.",
     technologies: ["CoinGecko API", "React", "CSS"],
@@ -35,6 +37,8 @@ export const PROJECTS = [
   {
     title: "Resume-builder",
     image: project2,
+    github: "https://github.com/Hafijur0211/resume-builder",
+    live: "https://resume-builder002.netlify.app/",
     description:
       "Resume-builder is a web application where anyone can create resume with ease and choose from different available templates.",
     technologies: ["HTML", "CSS", "React", "Material UI"],

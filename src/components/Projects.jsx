@@ -36,7 +36,17 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className="w-full mx-w-xl lg:w-3/4"
             >
-              <h6 className="mb-4 font-semibold">{project.title}</h6>
+              <h6 className="mb-2 font-semibold">{project.title}</h6>
+              <a href={project.github} target="_blank">
+                <button className="m-2 px-2  py-2 bg-neutral-900  text-sm font-medium text-white sm:w-fit rounded mb-4">
+                  Code
+                </button>
+              </a>
+              <a href={project.live} target="_blank">
+                <button className="m-2 px-2  py-2 bg-neutral-900  text-sm font-medium text-white sm:w-fit rounded mb-4">
+                  Live
+                </button>
+              </a>
               <p className="mb-4 text-neutral-400">{project.description}</p>
               {project.technologies.map((tech, index) => (
                 <span
