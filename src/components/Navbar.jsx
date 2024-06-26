@@ -1,18 +1,19 @@
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+// import logo from '../assets/kevinRushLogo.png'
+import { FaLinkedin } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
 
 const Navbar = () => {
   return (
-    <nav className="mb-20 mr-4 flex items-center justify-between py-6">
+    <div className="mb-20 flex items-center justify-between py-6">
       <div className="flex flex-shrink-0 items-center">
-        <img className="mx-2 w-10" src="" alt="" />
+        {/* <img className='mx-2 w-10' src={logo} alt="logo" /> */}
       </div>
-      <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <FaLinkedin />
-        <FaGithub />
+      <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
+        <FaLinkedin className='cursor-pointer'  onClick={() => window.open("mailto:hafijur021998@gmail.com")}/>
+        <FaGithub className='cursor-pointer' onClick={() => window.open("https://github.com/Hafijur0211")}/>
       </div>
-    </nav>
-  );
-};
+    </div>
+  )
+}
 
-export default Navbar;
+export default Navbar
