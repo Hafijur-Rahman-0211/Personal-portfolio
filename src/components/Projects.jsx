@@ -20,30 +20,28 @@ const Projects = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
-              className="w-full lg:w-1/4"
+              className="w-full lg:w-1/4 flex justify-center"
             >
               <img
                 src={project.image}
-                width={250}
-                height={250}
                 alt={project.title}
-                className="mb-6 rounded"
+                className="mb-6 rounded object-cover w-full max-w-xs h-auto"
               />
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1 }}
-              className="w-full mx-w-xl lg:w-3/4"
+              className="w-full lg:w-3/4 mx-w-xl"
             >
               <h6 className="mb-2 font-semibold">{project.title}</h6>
               <a href={project.github} target="_blank">
-                <button className="m-2 px-2  py-2 bg-neutral-900  text-sm font-medium text-white sm:w-fit rounded mb-4">
+                <button className="m-2 px-2 py-2 bg-neutral-900 text-sm font-medium text-white sm:w-fit rounded mb-4">
                   Code
                 </button>
               </a>
               <a href={project.live} target="_blank">
-                <button className="m-2 px-2  py-2 bg-neutral-900  text-sm font-medium text-white sm:w-fit rounded mb-4">
+                <button className="m-2 px-2 py-2 bg-neutral-900 text-sm font-medium text-white sm:w-fit rounded mb-4">
                   Live
                 </button>
               </a>

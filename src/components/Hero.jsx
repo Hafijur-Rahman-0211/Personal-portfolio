@@ -1,7 +1,7 @@
 import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/Hafijur.png";
 import { motion } from "framer-motion";
-import Resume from "../assets/Hafijur_cv.pdf";
+import Resume from "../assets/Hafijur_rahman_frontend.pdf";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -14,7 +14,7 @@ const container = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-36">
+    <section className="border-b border-neutral-900 pb-4 lg:mb-36">
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
@@ -47,10 +47,10 @@ const Hero = () => {
                 href={Resume}
                 download="Hafijur_Resume.pdf"
                 className="w-6 h-6 md:w-8 md:h-8"
+                aria-label="Download Hafijur Rahman's Resume"
               >
                 <button className="px-1 inline-block py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-red-400 via-purple-300 text-white mb-4">
                   <span className="block bg-zinc-800 hover:bg-purple-800 rounded-full px-5 py-4">
-                    {""}
                     Download Resume
                   </span>
                 </button>
@@ -68,12 +68,12 @@ const Hero = () => {
               width={400}
               height={400}
               className="rounded-2xl"
-              alt="Hafijur Rahman"
+              alt="Hafijur Rahman, Frontend Developer"
             />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

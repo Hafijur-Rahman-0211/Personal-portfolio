@@ -17,7 +17,7 @@ const Navbar = () => {
         />
         <FaGithub
           className="cursor-pointer"
-          onClick={() => window.open("https://github.com/Hafijur0211")}
+          onClick={() => window.open("https://github.com/Hafijur-Rahman-0211")}
         />
       </div>
     </div>
